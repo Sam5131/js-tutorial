@@ -32,3 +32,27 @@ const myFunction = function(){
 
 // typeof of null is object
 //typeof of function is function but called as object function
+
+// Stack is for primitive. Copy is given
+// Heap for non primitive. reference is given.
+
+let myYoutube = 'Syamantak'
+let anothername = myYoutube //you get a copy of the variable
+anothername = 'Paul'
+
+console.log(myYoutube);
+console.log(anothername);
+
+
+let user1 = {
+    email:"abc@gmail.com",
+    upi:'upi@find'
+}
+
+console.log(user1.email);
+let userTwo = user1 //getting the reference of the object
+
+userTwo.email = 'xyz@yahoo.com'
+
+console.log(user1.email);
+console.log(userTwo.email);
